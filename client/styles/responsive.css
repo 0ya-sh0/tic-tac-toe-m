@@ -1,0 +1,113 @@
+body { 
+  font-family: raleway;
+  background-color: #001111;
+  color: white;
+}
+
+
+
+p {
+  color:#e91e63;
+  letter-spacing: 3px;
+  text-align:  center;
+  font-size: 40px;
+
+}
+
+#result {
+  display: block;
+  margin:auto;
+  text-align:center; 
+  height: 10%;
+  width: 80%;
+  color: lightblue;
+  background-color: #4a148c;
+  padding: 15px 15px;
+  font-size: 20px;
+}
+
+#game { 
+  height:180px;
+  width:180px;
+  text-align:center;
+  border-width:20px;
+  display:block;
+  margin:auto;
+  padding: 10px 10px;
+}  
+   
+#board {
+  border-width:2px;
+  height: 145px;
+  width: 145px;
+  background-color:#FF851B;
+  display:block;
+  margin:auto;
+  padding:20px 20px;
+}
+   
+
+   /* for buttons*/
+.box { 
+  margin: auto;
+  display: block;
+  background-color: white;
+  border: 2px solid #ff7777;
+  height:45px;
+  width:45px;
+  text-align: center;
+  font-size:30px;
+  font-weight:lighter;  
+  color: green;
+  text-decoration: none;
+}
+
+.box:hover{
+  background-color: lightblue;
+  color: white; 
+}
+
+.buttons_for_settings {
+  font-family: raleway;
+  letter-spacing: 2px;
+  font-weight:lighter;
+  position: relative;
+  background-color: #4CAF50;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 15px 15px;
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  margin:auto;
+  display: block;
+  overflow: hidden;
+}
+
+.buttons_for_settings:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.buttons_for_settings:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s;
+}
+
+#s-game {
+  display: none;
+}

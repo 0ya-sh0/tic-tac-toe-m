@@ -1,0 +1,63 @@
+<!doctype HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+ <title>My app
+ </title>
+<link rel="stylesheet" media="(max-width:500px)" href="/client/styles/responsive.css"></link>
+  <link rel="stylesheet" media="(min-width:500px)" href="/client/styles/style.css"></link>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  
+</head>
+
+<body>
+
+<p>TIC TAC TOE</p>
+
+<section id="s-login">
+  <span>Game ID : </span><input type = "number" id="input-gid">  <br>
+
+  <button id="submit" onclick="submitId()">Play</button>
+
+</section>
+<section id="s-game">
+  <p id="result"> User Vs User </p>
+
+  <div id="game">
+
+    <table id="board" >
+      <tr> 
+      <td><button onclick="getmove(0)" class="box"></button></td>
+      <td><button onclick="getmove(1)" class="box"></button></td>
+      <td><button onclick="getmove(2)" class="box"></button></td>
+      </tr>
+      <tr> 
+      <td><button onclick="getmove(3)" class="box"></button></td>
+      <td><button onclick="getmove(4)" class="box"></button></td>
+      <td><button onclick="getmove(5)" class="box"></button></td>
+      </tr>
+      <tr> 
+      <td><button onclick="getmove(6)" class="box"></button></td>
+      <td><button onclick="getmove(7)" class="box"></button></td>
+      <td><button onclick="getmove(8)" class="box"></button></td>
+      </tr> 
+    </table>
+    </div>
+<!--
+    <div>
+      <br/>
+
+      <button class="buttons_for_settings"  onclick="freshit()">CLEAR</button>
+      
+    </div>
+    
+  </div>
+-->
+</section>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/client/scripts/script.js"></script>
+</body>
+</html>
